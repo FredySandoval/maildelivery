@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <script type="text/javascript" src="http://livejs.com/live.js"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mail Delivery</title>
+</head>
+
+<body>
+    <div class="container centerXY">
+        <div class="wrapper flex-direction">
+            <div class="wrapper-description flex-1 centerXY both">
+                <div>
+                    <p>
+                    <header><strong>Email Delivery app</strong></header>
+                    <br> This box sends an email as: not-reply@fredy.dev
+                    <br> to the recipient bellow.
+                    <ul>
+                        <li>This uses a mail server on Google Cloud Platform.</li>
+                        <li>All content is private, and no email addresses will be capture.</li>
+                        <li>SPF and DKIM are configure to avoid landing on spam.</li>
+                        <li>You may want to check on your PROMOTIONS folder</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper-application flex-1 both centerXY">
+                <div>
+                    <input class="email" placeholder="...Type your mail here">
+                    <div class="update">⠀</div>
+                    <div class="centerXY">
+                        <button onclick="change()" class="button">SEND NOW</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="css/script.js"></script>
+</body>
+
+</html>

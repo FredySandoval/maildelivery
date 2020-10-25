@@ -1,0 +1,150 @@
+/* * {
+    border: 1px solid black;
+} */
+
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+.centerXY {
+    /* for Parent*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-direction {
+    /* for Parent*/
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-1 {
+    /* for Child */
+    flex: 1;
+}
+
+.container {
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+    /* height: 500px; */
+}
+
+.both {
+    margin: 0%;
+    padding-left: min(10px);
+    padding-right: min(10px);
+    border: 5px solid rgb(221, 221, 221);
+    border-radius: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For Tables*/
+    .flex-direction {
+        flex-direction: row;
+    }
+    .both {
+        margin: 5%;
+        padding: 15px;
+        border: 10px solid rgb(221, 221, 221);
+    }
+}
+
+/* --- email css ---*/ 
+
+.email {
+    font-size: 20px;
+    border: 0;
+    padding: 10px;
+    min-width: 275px;
+    background: rgba(56, 56, 56, 0.993);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.email::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, .35);
+}
+
+.email::-moz-placeholder {
+    color: rgba(255, 255, 255, .35);
+}
+
+.email:-ms-input-placeholder {
+    color: rgba(255, 255, 255, .35);
+}
+
+.email::-ms-input-placeholder {
+    color: rgba(255, 255, 255, .35);
+}
+
+.email::placeholder {
+    color: rgba(255, 255, 255, .35);
+}
+
+.update {
+    min-width: 275px;
+    margin-top: 10px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.failure {
+    background: rgba(255, 0, 0, 0.24);
+    text-align: center;
+    color: black;
+}
+
+.success {
+    background: rgba(0, 255, 0, .6);
+    text-align: center;
+    color: black;
+}
+
+button {
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 40px;
+    background: rgb(155, 155, 155);
+    border: 2px solid #3d3d3d;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    color: white;
+    background: #1ECD97;
+}
+
+button:active {
+    letter-spacing: 5px;
+}
