@@ -33,10 +33,6 @@ ul {
     flex: 1;
 }
 
-.container {
-    /* height: 100%; */
-}
-
 .wrapper {
     max-width: 1000px;
     width: 100%;
@@ -66,13 +62,14 @@ ul {
     }
 }
 
-/* --- email css ---*/ 
+/* --- email css ---*/
 
 .email {
-    font-size: 20px;
+    /* font-size: 20px; */
+    width: 100%;
     border: 0;
-    padding: 10px;
-    min-width: 275px;
+    /* padding: 10px; */
+    /* min-width: 120px; */
     background: rgba(56, 56, 56, 0.993);
     color: rgb(255, 255, 255);
     border-radius: 15px;
@@ -147,4 +144,42 @@ button:hover {
 
 button:active {
     letter-spacing: 5px;
+}
+
+/* Input Css starts */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.block {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 50px 30px;
+}
+
+.input-res {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: 15px/1 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    max-width: 500px;
+    background-color: #ddd;
+    border: none;
+    padding: 10px 11px 11px 11px;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input-res::placeholder {
+    color: rgb(70, 70, 70);
+}
+
+.input-res::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgb(70, 70, 70);
 }
